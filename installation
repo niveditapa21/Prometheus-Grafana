@@ -1,0 +1,15 @@
+STEP1:
+******
+update the system repository index  : -->  sudo apt update -y
+
+Export the release of Prometheus    :  --> export RELEASE="2.2.1"
+
+STEP2:
+******
+Creating Prometheus System Users and Directory: -->  sudo useradd --no-create-home --shell /bin/false prometheus  
+( store the Prometheus data and files)               sudo useradd --no-create-home --shell /bin/false node_exporter
+                                                     sudo mkdir /etc/prometheus
+                                                     sudo mkdir /var/lib/prometheus
+update the ownership:   -->   sudo chown prometheus:prometheus /etc/prometheus
+                              sudo chown prometheus:prometheus /var/lib/prometheus
+
