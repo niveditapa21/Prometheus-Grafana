@@ -13,3 +13,9 @@ Creating Prometheus System Users and Directory: -->  sudo useradd --no-create-ho
 update the ownership:   -->   sudo chown prometheus:prometheus /etc/prometheus
                               sudo chown prometheus:prometheus /var/lib/prometheus
 
+
+STEP3:
+*******
+Download Prometheus Binary File :--> Navigate to /opt directory --->    cd /opt/
+Download the Prometheus setup using wget   ---->  wget https://github.com/prometheus/prometheus/releases/download/v2.26.0/prometheus-2.26.0.linux-amd64.tar.gz
+
